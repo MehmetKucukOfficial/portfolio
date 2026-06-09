@@ -41,7 +41,7 @@ export default function Projects() {
             >
               {/* Screenshot / Placeholder */}
               <div
-                className={`relative h-48 bg-[#05050f] overflow-hidden`}
+                className={`relative aspect-video bg-[#05050f] overflow-hidden`}
               >
                 {project.screenshot ? (
                   <Image
@@ -49,7 +49,7 @@ export default function Projects() {
                     alt={project.title}
                     fill
                     unoptimized
-                    className="object-contain"
+                    className="object-cover"
                   />
                 ) : (
                   <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
