@@ -1,0 +1,240 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="sidebar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2744"/>
+      <stop offset="100%" style="stop-color:#131f38"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="135deg" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#047857"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d97706"/>
+      <stop offset="100%" style="stop-color:#b45309"/>
+    </linearGradient>
+    <linearGradient id="card4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#6d28d9"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="winShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="24" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <clipPath id="win">
+      <rect x="30" y="24" width="740" height="402" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- Page bg -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)"/>
+
+  <!-- Browser window -->
+  <rect x="30" y="24" width="740" height="402" rx="10" fill="#1e2d45" filter="url(#winShadow)"/>
+
+  <!-- Title bar -->
+  <rect x="30" y="24" width="740" height="32" rx="10" fill="#162032"/>
+  <rect x="30" y="44" width="740" height="12" fill="#162032"/>
+  <circle cx="54" cy="40" r="6" fill="#ff5f57"/>
+  <circle cx="74" cy="40" r="6" fill="#febc2e"/>
+  <circle cx="94" cy="40" r="6" fill="#28c840"/>
+  <!-- URL bar -->
+  <rect x="130" y="32" width="420" height="16" rx="8" fill="#0d1826"/>
+  <text x="185" y="43" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#64748b">🔒  localhost:3000/home</text>
+
+  <!-- ── SIDEBAR ── -->
+  <rect x="30" y="56" width="148" height="370" fill="url(#sidebar)" clip-path="url(#win)"/>
+
+  <!-- Logo -->
+  <rect x="44" y="68" width="24" height="24" rx="6" fill="#2563eb"/>
+  <text x="56" y="84" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="white">+</text>
+  <text x="76" y="79" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="white">HMS</text>
+  <text x="76" y="91" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#64748b">Hospital Mgmt</text>
+
+  <line x1="44" y1="102" x2="162" y2="102" stroke="#243350" stroke-width="1"/>
+
+  <!-- Sidebar items -->
+  <g font-family="'Segoe UI',Arial,sans-serif" font-size="10">
+    <!-- Dashboard (active) -->
+    <rect x="36" y="108" width="136" height="26" rx="6" fill="#2563eb" opacity="0.2"/>
+    <rect x="36" y="108" width="3" height="26" rx="1.5" fill="#2563eb"/>
+    <text x="50" y="125" fill="#2563eb">⊞</text>
+    <text x="64" y="125" fill="#93c5fd" font-weight="600">Dashboard</text>
+
+    <text x="50" y="152" fill="#64748b">👤</text>
+    <text x="64" y="152" fill="#64748b">Randevular</text>
+
+    <text x="50" y="176" fill="#64748b">🩺</text>
+    <text x="64" y="176" fill="#64748b">Doktorlar</text>
+
+    <text x="50" y="200" fill="#64748b">🏥</text>
+    <text x="64" y="200" fill="#64748b">Departmanlar</text>
+
+    <text x="50" y="224" fill="#64748b">👥</text>
+    <text x="64" y="224" fill="#64748b">Çalışanlar</text>
+
+    <text x="50" y="248" fill="#64748b">💊</text>
+    <text x="64" y="248" fill="#64748b">Eczane</text>
+
+    <text x="50" y="272" fill="#64748b">📋</text>
+    <text x="64" y="272" fill="#64748b">İzinler</text>
+
+    <text x="50" y="296" fill="#64748b">💬</text>
+    <text x="64" y="296" fill="#64748b">Mesajlar</text>
+
+    <text x="50" y="320" fill="#64748b">⚠</text>
+    <text x="64" y="320" fill="#64748b">Şikayetler</text>
+
+    <text x="50" y="344" fill="#64748b">💰</text>
+    <text x="64" y="344" fill="#64748b">Maaşlar</text>
+  </g>
+
+  <!-- User at bottom -->
+  <line x1="44" y1="376" x2="162" y2="376" stroke="#243350" stroke-width="1"/>
+  <circle cx="56" cy="394" r="12" fill="#2563eb"/>
+  <text x="56" y="399" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="white">MK</text>
+  <text x="74" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="600" fill="#e2e8f0">Admin</text>
+  <text x="74" y="401" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#64748b">mehmetkucuk</text>
+
+  <!-- ── MAIN CONTENT ── -->
+  <rect x="178" y="56" width="592" height="370" fill="#0f1d30" clip-path="url(#win)"/>
+
+  <!-- Top header -->
+  <rect x="178" y="56" width="592" height="40" fill="#162032"/>
+  <text x="194" y="81" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="white">Dashboard</text>
+  <text x="194" y="93" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#64748b">Hastane Yönetim Sistemi</text>
+  <!-- Notif & profile -->
+  <rect x="680" y="64" width="24" height="24" rx="6" fill="#1e2d45"/>
+  <text x="692" y="80" text-anchor="middle" font-family="Arial" font-size="11" fill="#94a3b8">🔔</text>
+  <circle cx="714" cy="76" r="12" fill="#2563eb"/>
+  <text x="714" y="81" text-anchor="middle" font-family="Arial" font-size="10" fill="white">A</text>
+  <text x="692" y="66" font-family="Arial" font-size="7" fill="#ef4444">●</text>
+
+  <!-- ── STAT CARDS ── -->
+  <!-- Card 1: Patients -->
+  <rect x="190" y="108" width="130" height="68" rx="8" fill="url(#card1)" filter="url(#shadow)"/>
+  <text x="204" y="128" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">Toplam Hasta</text>
+  <text x="204" y="152" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="700" fill="white">1,284</text>
+  <text x="204" y="168" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)">▲ +12 bu ay</text>
+  <text x="290" y="132" font-family="Arial" font-size="22" fill="rgba(255,255,255,0.2)">👤</text>
+
+  <!-- Card 2: Doctors -->
+  <rect x="330" y="108" width="130" height="68" rx="8" fill="url(#card2)" filter="url(#shadow)"/>
+  <text x="344" y="128" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">Doktor Sayısı</text>
+  <text x="344" y="152" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="700" fill="white">48</text>
+  <text x="344" y="168" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)">▲ +3 bu ay</text>
+  <text x="430" y="132" font-family="Arial" font-size="22" fill="rgba(255,255,255,0.2)">🩺</text>
+
+  <!-- Card 3: Appointments -->
+  <rect x="470" y="108" width="130" height="68" rx="8" fill="url(#card3)" filter="url(#shadow)"/>
+  <text x="484" y="128" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">Randevular</text>
+  <text x="484" y="152" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="700" fill="white">326</text>
+  <text x="484" y="168" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)">▲ +28 bugün</text>
+  <text x="570" y="132" font-family="Arial" font-size="22" fill="rgba(255,255,255,0.2)">📅</text>
+
+  <!-- Card 4: Departments -->
+  <rect x="610" y="108" width="148" height="68" rx="8" fill="url(#card4)" filter="url(#shadow)"/>
+  <text x="624" y="128" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.75)">Departmanlar</text>
+  <text x="624" y="152" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="700" fill="white">12</text>
+  <text x="624" y="168" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)">Kardiyoloji, Nöroloji...</text>
+  <text x="726" y="132" font-family="Arial" font-size="22" fill="rgba(255,255,255,0.2)">🏥</text>
+
+  <!-- ── RECENT APPOINTMENTS TABLE ── -->
+  <rect x="190" y="190" width="408" height="202" rx="8" fill="#162032" filter="url(#shadow)"/>
+  <text x="204" y="210" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="white">Son Randevular</text>
+  <!-- Table header -->
+  <rect x="190" y="216" width="408" height="22" rx="0" fill="#1e2d45"/>
+  <text x="204" y="231" font-family="'Segoe UI',Arial,sans-serif" font-size="8" font-weight="600" fill="#64748b">HASTA</text>
+  <text x="300" y="231" font-family="'Segoe UI',Arial,sans-serif" font-size="8" font-weight="600" fill="#64748b">DOKTOR</text>
+  <text x="395" y="231" font-family="'Segoe UI',Arial,sans-serif" font-size="8" font-weight="600" fill="#64748b">DEPARTMAN</text>
+  <text x="508" y="231" font-family="'Segoe UI',Arial,sans-serif" font-size="8" font-weight="600" fill="#64748b">DURUM</text>
+  <!-- Rows -->
+  <g font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#cbd5e1">
+    <line x1="190" y1="252" x2="598" y2="252" stroke="#243350" stroke-width="1"/>
+    <text x="204" y="248">Ahmet Yılmaz</text>
+    <text x="300" y="248">Dr. Elif Şahin</text>
+    <text x="395" y="248">Kardiyoloji</text>
+    <rect x="506" y="239" width="46" height="14" rx="7" fill="#06400020"/>
+    <rect x="506" y="239" width="46" height="14" rx="7" fill="none" stroke="#059669" stroke-width="1"/>
+    <text x="529" y="249" text-anchor="middle" font-size="8" fill="#34d399">Onaylandı</text>
+
+    <line x1="190" y1="272" x2="598" y2="272" stroke="#243350" stroke-width="1"/>
+    <text x="204" y="268">Fatma Kaya</text>
+    <text x="300" y="268">Dr. Mert Demir</text>
+    <text x="395" y="268">Nöroloji</text>
+    <rect x="506" y="259" width="46" height="14" rx="7" fill="#92400e20"/>
+    <rect x="506" y="259" width="46" height="14" rx="7" fill="none" stroke="#d97706" stroke-width="1"/>
+    <text x="529" y="269" text-anchor="middle" font-size="8" fill="#fbbf24">Bekliyor</text>
+
+    <line x1="190" y1="292" x2="598" y2="292" stroke="#243350" stroke-width="1"/>
+    <text x="204" y="288">Kemal Arslan</text>
+    <text x="300" y="288">Dr. Zeynep Kurt</text>
+    <text x="395" y="288">Ortopedi</text>
+    <rect x="506" y="279" width="46" height="14" rx="7" fill="#1e3a5f20"/>
+    <rect x="506" y="279" width="46" height="14" rx="7" fill="none" stroke="#2563eb" stroke-width="1"/>
+    <text x="529" y="289" text-anchor="middle" font-size="8" fill="#60a5fa">İşlemde</text>
+
+    <line x1="190" y1="312" x2="598" y2="312" stroke="#243350" stroke-width="1"/>
+    <text x="204" y="308">Selin Öztürk</text>
+    <text x="300" y="308">Dr. Burak Aydın</text>
+    <text x="395" y="308">Dahiliye</text>
+    <rect x="506" y="299" width="46" height="14" rx="7" fill="#06400020"/>
+    <rect x="506" y="299" width="46" height="14" rx="7" fill="none" stroke="#059669" stroke-width="1"/>
+    <text x="529" y="309" text-anchor="middle" font-size="8" fill="#34d399">Onaylandı</text>
+
+    <line x1="190" y1="332" x2="598" y2="332" stroke="#243350" stroke-width="1"/>
+    <text x="204" y="328">Hasan Çelik</text>
+    <text x="300" y="328">Dr. Ayşe Kılıç</text>
+    <text x="395" y="328">Pediatri</text>
+    <rect x="506" y="319" width="46" height="14" rx="7" fill="#92400e20"/>
+    <rect x="506" y="319" width="46" height="14" rx="7" fill="none" stroke="#d97706" stroke-width="1"/>
+    <text x="529" y="329" text-anchor="middle" font-size="8" fill="#fbbf24">Bekliyor</text>
+  </g>
+  <!-- View all -->
+  <text x="572" y="210" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#2563eb">Tümünü Gör →</text>
+
+  <!-- ── PHARMACY PANEL ── -->
+  <rect x="610" y="190" width="148" height="96" rx="8" fill="#162032" filter="url(#shadow)"/>
+  <text x="624" y="210" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="white">💊 Eczane</text>
+  <g font-family="'Segoe UI',Arial,sans-serif" font-size="8.5">
+    <text x="624" y="230" fill="#94a3b8">Toplam İlaç:</text>
+    <text x="700" y="230" fill="#34d399" font-weight="700">142</text>
+    <text x="624" y="248" fill="#94a3b8">Kritik Stok:</text>
+    <text x="700" y="248" fill="#f87171" font-weight="700">7</text>
+    <text x="624" y="266" fill="#94a3b8">Son Güncelleme:</text>
+    <text x="624" y="278" fill="#64748b">Bugün 09:30</text>
+  </g>
+
+  <!-- ── SOCKET.IO CHAT PANEL ── -->
+  <rect x="610" y="296" width="148" height="96" rx="8" fill="#162032" filter="url(#shadow)"/>
+  <text x="624" y="316" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="white">💬 Mesajlar</text>
+  <circle cx="630" cy="332" r="5" fill="#2563eb"/>
+  <text x="638" y="336" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#cbd5e1">Dr. Elif Şahin</text>
+  <text x="638" y="346" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#64748b">Randevu onaylayabilir...</text>
+  <line x1="624" y1="352" x2="748" y2="352" stroke="#243350" stroke-width="1"/>
+  <circle cx="630" cy="362" r="5" fill="#059669"/>
+  <text x="638" y="366" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#cbd5e1">Admin</text>
+  <text x="638" y="376" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#64748b">Yeni çalışan eklendi.</text>
+  <!-- Socket.io badge -->
+  <rect x="690" y="310" width="52" height="14" rx="7" fill="#1e2d4540"/>
+  <rect x="690" y="310" width="52" height="14" rx="7" fill="none" stroke="#22d3ee" stroke-width="1"/>
+  <text x="716" y="320" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="#22d3ee">socket.io</text>
+
+  <!-- ── BOTTOM BAR ── -->
+  <rect x="178" y="404" width="592" height="22" fill="#0d1826" clip-path="url(#win)"/>
+  <circle cx="194" cy="415" r="4" fill="#22c55e"/>
+  <text x="204" y="419" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#475569">Bağlı  |  Node.js + Express  |  MySQL  |  EJS  |  Socket.io</text>
+</svg>

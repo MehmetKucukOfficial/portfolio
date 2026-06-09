@@ -1,0 +1,191 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0533;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c026d3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c026d3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="micGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e879f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="windowClip">
+      <rect x="60" y="40" width="680" height="370" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="0.8" fill="rgba(255,255,255,0.04)"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#dots)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="180" cy="200" r="140" fill="#7c3aed" opacity="0.07"/>
+  <circle cx="620" cy="260" r="120" fill="#c026d3" opacity="0.06"/>
+
+  <!-- Window frame -->
+  <rect x="60" y="40" width="680" height="370" rx="12" fill="#0f0a1e" stroke="#3b1d6b" stroke-width="1.5"/>
+
+  <!-- Title bar -->
+  <rect x="60" y="40" width="680" height="42" rx="12" fill="#1a0d35"/>
+  <rect x="60" y="64" width="680" height="18" fill="#1a0d35"/>
+
+  <!-- Window controls -->
+  <circle cx="92" cy="61" r="7" fill="#ff5f57"/>
+  <circle cx="116" cy="61" r="7" fill="#febc2e"/>
+  <circle cx="140" cy="61" r="7" fill="#28c840"/>
+
+  <!-- Title -->
+  <text x="400" y="66" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#d8b4fe">Voice Project — Ses Tanıma Sistemi</text>
+
+  <!-- Left panel: Controls -->
+  <rect x="75" y="100" width="210" height="295" rx="8" fill="#160b2e" stroke="#2d1a54" stroke-width="1"/>
+
+  <!-- Microphone section title -->
+  <text x="180" y="128" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" letter-spacing="1">KAYIT</text>
+
+  <!-- Microphone icon (large, centered) -->
+  <g transform="translate(155, 148)" filter="url(#softGlow)">
+    <!-- Mic body -->
+    <rect x="0" y="0" width="50" height="68" rx="25" fill="url(#micGrad)" opacity="0.9"/>
+    <!-- Mic grille lines -->
+    <line x1="12" y1="20" x2="38" y2="20" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <line x1="10" y1="30" x2="40" y2="30" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <line x1="12" y1="40" x2="38" y2="40" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <!-- Mic stand -->
+    <path d="M25 68 Q25 85 25 90" stroke="#e879f9" stroke-width="2.5" fill="none"/>
+    <line x1="14" y1="90" x2="36" y2="90" stroke="#e879f9" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Arc around mic -->
+    <path d="M-10 34 Q-10 80 25 80 Q60 80 60 34" stroke="#a855f7" stroke-width="2" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Record button -->
+  <rect x="105" y="268" width="150" height="36" rx="18" fill="url(#btnGrad)"/>
+  <circle cx="130" cy="286" r="6" fill="rgba(255,255,255,0.9)"/>
+  <text x="170" y="290" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="white">Kayıt Başlat</text>
+
+  <!-- Duration setting -->
+  <text x="88" y="322" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6d4fa0">Süre:</text>
+  <rect x="110" y="311" width="50" height="20" rx="4" fill="#2d1a54" stroke="#4c2d80" stroke-width="1"/>
+  <text x="135" y="325" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c4b5fd">5 sn</text>
+  <text x="170" y="322" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6d4fa0">Konuşmacı:</text>
+  <rect x="220" y="311" width="55" height="20" rx="4" fill="#2d1a54" stroke="#4c2d80" stroke-width="1"/>
+  <text x="247" y="325" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c4b5fd">Mehmet</text>
+
+  <!-- Analyze button -->
+  <rect x="105" y="342" width="150" height="36" rx="18" fill="#1e1040" stroke="#5b21b6" stroke-width="1.5"/>
+  <text x="180" y="365" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="500" fill="#a78bfa">Dosya Analiz Et</text>
+
+  <!-- Right panel: Waveform + Results -->
+  <rect x="302" y="100" width="423" height="295" rx="8" fill="#160b2e" stroke="#2d1a54" stroke-width="1"/>
+
+  <!-- Waveform section -->
+  <text x="320" y="124" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" letter-spacing="1">SES DALGASI</text>
+
+  <!-- Waveform visualization area -->
+  <rect x="316" y="132" width="393" height="90" rx="6" fill="#0d0820"/>
+
+  <!-- Animated waveform bars (MFCC visualization) -->
+  <g filter="url(#glow)">
+    <!-- Bar heights create a realistic waveform pattern -->
+    <rect x="322" y="182" width="6" height="30" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="332" y="168" width="6" height="44" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="342" y="175" width="6" height="37" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="352" y="155" width="6" height="57" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="362" y="162" width="6" height="50" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="372" y="148" width="6" height="64" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="382" y="140" width="6" height="72" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="392" y="152" width="6" height="60" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="402" y="145" width="6" height="67" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="412" y="135" width="6" height="77" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="422" y="142" width="6" height="70" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="432" y="150" width="6" height="62" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="442" y="138" width="6" height="74" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="452" y="158" width="6" height="54" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="462" y="148" width="6" height="64" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="472" y="160" width="6" height="52" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="482" y="155" width="6" height="57" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="492" y="165" width="6" height="47" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="502" y="170" width="6" height="42" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="512" y="160" width="6" height="52" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="522" y="152" width="6" height="60" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="532" y="162" width="6" height="50" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="542" y="172" width="6" height="40" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="552" y="165" width="6" height="47" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="562" y="175" width="6" height="37" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="572" y="178" width="6" height="34" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="582" y="170" width="6" height="42" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="592" y="180" width="6" height="32" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="602" y="183" width="6" height="29" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="612" y="176" width="6" height="36" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="622" y="185" width="6" height="27" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="632" y="188" width="6" height="24" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="642" y="184" width="6" height="28" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="652" y="190" width="6" height="22" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="662" y="187" width="6" height="25" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="672" y="183" width="6" height="29" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="682" y="186" width="6" height="26" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="692" y="182" width="6" height="30" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="702" y="185" width="6" height="27" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+  </g>
+
+  <!-- Center line -->
+  <line x1="316" y1="177" x2="709" y2="177" stroke="#3b1d6b" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <!-- Speech Recognition output -->
+  <text x="320" y="246" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" letter-spacing="1">KONUŞMA TANIMA (TR)</text>
+  <rect x="316" y="252" width="393" height="44" rx="6" fill="#0d0820" stroke="#2d1a54" stroke-width="1"/>
+  <text x="328" y="270" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#e2d9f3">"Merhaba, ses tanıma sistemi başarıyla çalışıyor."</text>
+  <text x="328" y="286" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6d4fa0">Kelime sayısı: 7</text>
+
+  <!-- Separator -->
+  <line x1="316" y1="310" x2="709" y2="310" stroke="#2d1a54" stroke-width="1"/>
+
+  <!-- Speaker ID result -->
+  <text x="320" y="330" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" letter-spacing="1">KONUŞMACI TESPİTİ (SVM)</text>
+
+  <!-- Speaker result box -->
+  <rect x="316" y="337" width="185" height="44" rx="6" fill="#1e0d38" stroke="#5b21b6" stroke-width="1.5"/>
+  <text x="327" y="356" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#9333ea">Tahmin:</text>
+  <text x="370" y="356" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#e879f9">Mehmet K.</text>
+  <text x="327" y="373" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#9333ea">Güven: </text>
+  <text x="368" y="373" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c4b5fd">94.7%</text>
+
+  <!-- Metrics boxes -->
+  <rect x="514" y="337" width="90" height="44" rx="6" fill="#0d1f38" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="559" y="356" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#60a5fa">Doğruluk</text>
+  <text x="559" y="372" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#93c5fd">96%</text>
+
+  <rect x="616" y="337" width="90" height="44" rx="6" fill="#0d3820" stroke="#15803d" stroke-width="1"/>
+  <text x="661" y="356" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#4ade80">F1 Skoru</text>
+  <text x="661" y="372" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#86efac">0.95</text>
+
+  <!-- Status bar -->
+  <rect x="60" y="392" width="680" height="18" rx="0" fill="#120929"/>
+  <rect x="60" y="392" width="680" height="18" rx="0" fill="#120929"/>
+  <circle cx="80" cy="401" r="4" fill="#22c55e" filter="url(#glow)"/>
+  <text x="92" y="405" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6d4fa0">Hazır  |  Model: SVM Linear  |  MFCC: 13 katsayı  |  Dil: Türkçe (TR)</text>
+</svg>

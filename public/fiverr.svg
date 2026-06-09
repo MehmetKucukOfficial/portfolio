@@ -1,0 +1,189 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fvbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1a0a"/>
+      <stop offset="100%" style="stop-color:#0d1628"/>
+    </linearGradient>
+    <linearGradient id="fvhero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2e1a"/>
+      <stop offset="100%" style="stop-color:#0f1f1f"/>
+    </linearGradient>
+    <linearGradient id="fvg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2e4a"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="fvg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1a4a"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="fvg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a2a"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="fvg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a1a1a"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <linearGradient id="fvstripe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#635bff"/>
+      <stop offset="100%" style="stop-color:#0070f3"/>
+    </linearGradient>
+    <filter id="fvshadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="fvwin">
+      <feDropShadow dx="0" dy="10" stdDeviation="25" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <clipPath id="fvclip">
+      <rect x="30" y="24" width="740" height="402" rx="10"/>
+    </clipPath>
+    <pattern id="fvdots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.7" fill="rgba(255,255,255,0.03)"/>
+    </pattern>
+    <pattern id="fvhp" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="0.5" fill="rgba(29,191,115,0.08)"/>
+    </pattern>
+  </defs>
+
+  <!-- Page bg -->
+  <rect width="800" height="450" fill="url(#fvbg)"/>
+  <rect width="800" height="450" fill="url(#fvdots)"/>
+
+  <!-- Browser window -->
+  <rect x="30" y="24" width="740" height="402" rx="10" fill="#f5f5f5" filter="url(#fvwin)"/>
+
+  <!-- Title bar -->
+  <rect x="30" y="24" width="740" height="32" rx="10" fill="#e0e0e0"/>
+  <rect x="30" y="44" width="740" height="12" fill="#e0e0e0"/>
+  <circle cx="54" cy="40" r="6" fill="#ff5f57"/>
+  <circle cx="74" cy="40" r="6" fill="#febc2e"/>
+  <circle cx="94" cy="40" r="6" fill="#28c840"/>
+  <rect x="130" y="32" width="400" height="16" rx="8" fill="#ccc"/>
+  <text x="186" y="43" font-family="Arial,sans-serif" font-size="9" fill="#888">localhost:3000</text>
+
+  <!-- NAVBAR -->
+  <rect x="30" y="56" width="740" height="40" fill="#404145" clip-path="url(#fvclip)"/>
+  <text x="58" y="81" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="white">fiverr</text>
+  <circle cx="108" cy="72" r="4" fill="#1dbf73"/>
+  <rect x="160" y="66" width="300" height="22" rx="3" fill="white"/>
+  <text x="174" y="81" font-family="Arial,sans-serif" font-size="9" fill="#aaa">Ne ariyorsunuz?</text>
+  <rect x="458" y="66" width="46" height="22" rx="2" fill="#1dbf73"/>
+  <text x="481" y="81" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="white">Ara</text>
+  <text x="540" y="81" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.7)">Fiverr Pro</text>
+  <text x="600" y="81" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.7)">Kesfet</text>
+  <text x="650" y="81" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.7)">Giris Yap</text>
+  <rect x="698" y="66" width="58" height="22" rx="3" fill="none" stroke="#1dbf73" stroke-width="1.5"/>
+  <text x="727" y="81" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#1dbf73">Katil</text>
+
+  <!-- HERO -->
+  <rect x="30" y="96" width="740" height="120" fill="url(#fvhero)" clip-path="url(#fvclip)"/>
+  <rect x="30" y="96" width="740" height="120" fill="url(#fvhp)" clip-path="url(#fvclip)"/>
+  <text x="80" y="128" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="white">Find the perfect</text>
+  <text x="80" y="152" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#1dbf73">freelance service</text>
+  <text x="80" y="173" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">Ihtiyaclariniz icin en iyi freelancer'i bulun</text>
+  <text x="80" y="200" font-family="Arial,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.5)">Trend:</text>
+  <rect x="110" y="190" width="56" height="16" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="138" y="201" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.75)">Web Tasarim</text>
+  <rect x="172" y="190" width="42" height="16" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="193" y="201" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.75)">Yazilim</text>
+  <rect x="220" y="190" width="38" height="16" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="239" y="201" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.75)">Logo</text>
+
+  <!-- Seller cards -->
+  <rect x="490" y="104" width="82" height="100" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <circle cx="531" cy="130" r="16" fill="#1dbf73"/>
+  <text x="531" y="136" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="white">S</text>
+  <text x="531" y="154" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="600" fill="rgba(255,255,255,0.9)">Sarah K.</text>
+  <text x="531" y="164" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">UI Designer</text>
+  <text x="531" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#fbbf24">4.9 ★</text>
+  <text x="531" y="186" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">from $25</text>
+
+  <rect x="584" y="112" width="82" height="86" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <circle cx="625" cy="135" r="14" fill="#7c3aed"/>
+  <text x="625" y="141" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="white">M</text>
+  <text x="625" y="156" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="600" fill="rgba(255,255,255,0.9)">Dev M.</text>
+  <text x="625" y="166" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">Full Stack</text>
+  <text x="625" y="178" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#fbbf24">5.0 ★</text>
+
+  <rect x="678" y="104" width="82" height="100" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <circle cx="719" cy="130" r="14" fill="#dc2626"/>
+  <text x="719" y="136" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="white">A</text>
+  <text x="719" y="152" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="600" fill="rgba(255,255,255,0.9)">Alex R.</text>
+  <text x="719" y="162" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">Graphic Design</text>
+  <text x="719" y="174" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#fbbf24">4.8 ★</text>
+  <text x="719" y="184" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)">from $15</text>
+
+  <!-- CATEGORIES -->
+  <rect x="30" y="216" width="740" height="36" fill="white" clip-path="url(#fvclip)"/>
+  <line x1="30" y1="252" x2="770" y2="252" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="90"  y="238" font-family="Arial,sans-serif" font-size="9" text-anchor="middle" fill="#1dbf73" font-weight="600">Programlama</text>
+  <text x="185" y="238" font-family="Arial,sans-serif" font-size="9" text-anchor="middle" fill="#404145">Tasarim</text>
+  <text x="265" y="238" font-family="Arial,sans-serif" font-size="9" text-anchor="middle" fill="#404145">Icerik</text>
+  <text x="340" y="238" font-family="Arial,sans-serif" font-size="9" text-anchor="middle" fill="#404145">Mobil</text>
+  <text x="415" y="238" font-family="Arial,sans-serif" font-size="9" text-anchor="middle" fill="#404145">Veri</text>
+  <text x="490" y="238" font-family="Arial,sans-serif" font-size="9" text-anchor="middle" fill="#404145">Video</text>
+  <text x="565" y="238" font-family="Arial,sans-serif" font-size="9" text-anchor="middle" fill="#404145">Ses</text>
+  <text x="650" y="238" font-family="Arial,sans-serif" font-size="9" text-anchor="middle" fill="#404145">Pazarlama</text>
+
+  <!-- GIG CARDS -->
+  <rect x="30" y="252" width="740" height="162" fill="#f5f5f5" clip-path="url(#fvclip)"/>
+  <text x="56" y="273" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#404145">One Cikan Hizmetler</text>
+
+  <!-- Gig 1 -->
+  <rect x="46" y="280" width="158" height="118" rx="6" fill="white" filter="url(#fvshadow)"/>
+  <rect x="46" y="280" width="158" height="56" rx="6" fill="url(#fvg1)"/>
+  <rect x="46" y="318" width="158" height="18" fill="url(#fvg1)"/>
+  <text x="125" y="314" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="rgba(255,255,255,0.4)">Web</text>
+  <circle cx="60" cy="345" r="8" fill="#1dbf73"/>
+  <text x="60" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="white">S</text>
+  <text x="74" y="345" font-family="Arial,sans-serif" font-size="7.5" fill="#404145" font-weight="600">Web Gelistirme</text>
+  <text x="74" y="355" font-family="Arial,sans-serif" font-size="7" fill="#aaa">Next.js • Full Stack</text>
+  <line x1="52" y1="362" x2="198" y2="362" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="60" y="376" font-family="Arial,sans-serif" font-size="8" fill="#fbbf24">★ 4.9</text>
+  <text x="160" y="376" text-anchor="end" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#404145">500 TL+</text>
+
+  <!-- Gig 2 -->
+  <rect x="216" y="280" width="158" height="118" rx="6" fill="white" filter="url(#fvshadow)"/>
+  <rect x="216" y="280" width="158" height="56" rx="6" fill="url(#fvg2)"/>
+  <rect x="216" y="318" width="158" height="18" fill="url(#fvg2)"/>
+  <text x="295" y="314" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="rgba(255,255,255,0.4)">UI</text>
+  <circle cx="230" cy="345" r="8" fill="#7c3aed"/>
+  <text x="230" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="white">A</text>
+  <text x="244" y="345" font-family="Arial,sans-serif" font-size="7.5" fill="#404145" font-weight="600">Logo Tasarimi</text>
+  <text x="244" y="355" font-family="Arial,sans-serif" font-size="7" fill="#aaa">Figma • Illustrator</text>
+  <line x1="222" y1="362" x2="368" y2="362" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="230" y="376" font-family="Arial,sans-serif" font-size="8" fill="#fbbf24">★ 5.0</text>
+  <text x="330" y="376" text-anchor="end" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#404145">300 TL+</text>
+
+  <!-- Gig 3 -->
+  <rect x="386" y="280" width="158" height="118" rx="6" fill="white" filter="url(#fvshadow)"/>
+  <rect x="386" y="280" width="158" height="56" rx="6" fill="url(#fvg3)"/>
+  <rect x="386" y="318" width="158" height="18" fill="url(#fvg3)"/>
+  <text x="465" y="314" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="rgba(255,255,255,0.4)">App</text>
+  <circle cx="400" cy="345" r="8" fill="#059669"/>
+  <text x="400" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="white">M</text>
+  <text x="414" y="345" font-family="Arial,sans-serif" font-size="7.5" fill="#404145" font-weight="600">Mobil Uygulama</text>
+  <text x="414" y="355" font-family="Arial,sans-serif" font-size="7" fill="#aaa">React Native • Flutter</text>
+  <line x1="392" y1="362" x2="538" y2="362" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="400" y="376" font-family="Arial,sans-serif" font-size="8" fill="#fbbf24">★ 4.8</text>
+  <text x="500" y="376" text-anchor="end" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#404145">800 TL+</text>
+
+  <!-- Gig 4 -->
+  <rect x="556" y="280" width="158" height="118" rx="6" fill="white" filter="url(#fvshadow)"/>
+  <rect x="556" y="280" width="158" height="56" rx="6" fill="url(#fvg4)"/>
+  <rect x="556" y="318" width="158" height="18" fill="url(#fvg4)"/>
+  <text x="635" y="314" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="rgba(255,255,255,0.4)">AI</text>
+  <circle cx="570" cy="345" r="8" fill="#dc2626"/>
+  <text x="570" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="white">D</text>
+  <text x="584" y="345" font-family="Arial,sans-serif" font-size="7.5" fill="#404145" font-weight="600">AI ve Otomasyon</text>
+  <text x="584" y="355" font-family="Arial,sans-serif" font-size="7" fill="#aaa">Python • OpenAI API</text>
+  <line x1="562" y1="362" x2="708" y2="362" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="570" y="376" font-family="Arial,sans-serif" font-size="8" fill="#fbbf24">★ 4.9</text>
+  <text x="696" y="376" text-anchor="end" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#404145">1200 TL+</text>
+
+  <!-- Footer -->
+  <rect x="30" y="414" width="740" height="12" fill="#404145" clip-path="url(#fvclip)"/>
+  <rect x="578" y="406" width="60" height="14" rx="3" fill="url(#fvstripe)" opacity="0.9"/>
+  <text x="608" y="416" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="white">stripe</text>
+  <text x="56" y="423" font-family="Arial,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.35)">Next.js 14  Node.js  PostgreSQL  Prisma ORM  Tailwind CSS  Stripe  REST API</text>
+</svg>

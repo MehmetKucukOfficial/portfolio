@@ -1,0 +1,180 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1200"/>
+      <stop offset="100%" style="stop-color:#0d1628"/>
+    </linearGradient>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c5a7d"/>
+      <stop offset="100%" style="stop-color:#2e3a5c"/>
+    </linearGradient>
+    <linearGradient id="orangeBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#eea412"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4babb1"/>
+      <stop offset="100%" style="stop-color:#0d9488"/>
+    </linearGradient>
+    <linearGradient id="c1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="c2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c2d12"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <linearGradient id="c3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#166534"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="c4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a044e"/>
+      <stop offset="100%" style="stop-color:#9333ea"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="winShadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="25" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <clipPath id="win">
+      <rect x="30" y="24" width="740" height="402" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- Page bg -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="0.7" fill="rgba(255,255,255,0.03)"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#dots)"/>
+
+  <!-- Browser window -->
+  <rect x="30" y="24" width="740" height="402" rx="10" fill="#f2f3f5" filter="url(#winShadow)"/>
+
+  <!-- Title bar -->
+  <rect x="30" y="24" width="740" height="32" rx="10" fill="#e8e8e8"/>
+  <rect x="30" y="44" width="740" height="12" fill="#e8e8e8"/>
+  <circle cx="54" cy="40" r="6" fill="#ff5f57"/>
+  <circle cx="74" cy="40" r="6" fill="#febc2e"/>
+  <circle cx="94" cy="40" r="6" fill="#28c840"/>
+  <rect x="130" y="32" width="400" height="16" rx="8" fill="#d0d0d0"/>
+  <text x="188" y="43" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#888">🔒  localhost:3000</text>
+
+  <!-- ── HEADER / NAVBAR ── -->
+  <rect x="30" y="56" width="740" height="44" fill="#4c5a7d" clip-path="url(#win)"/>
+  <!-- Logo -->
+  <text x="58" y="83" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="white">Job</text>
+  <text x="84" y="83" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#eea412">Finder</text>
+  <!-- Nav links -->
+  <text x="240" y="82" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">Anasayfa</text>
+  <text x="300" y="82" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">Kurslar</text>
+  <text x="350" y="82" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">Hakkında</text>
+  <text x="404" y="82" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">İletişim</text>
+  <!-- Auth buttons -->
+  <rect x="606" y="66" width="56" height="20" rx="3" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <text x="634" y="80" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="white">Giriş Yap</text>
+  <rect x="670" y="66" width="68" height="20" rx="3" fill="url(#orangeBtn)"/>
+  <text x="704" y="80" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="600" fill="white">Kayıt Ol</text>
+
+  <!-- ── HERO SECTION ── -->
+  <rect x="30" y="100" width="740" height="130" fill="url(#heroGrad)" clip-path="url(#win)"/>
+  <!-- Subtle pattern -->
+  <pattern id="heroPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="10" cy="10" r="0.6" fill="rgba(255,255,255,0.06)"/>
+  </pattern>
+  <rect x="30" y="100" width="740" height="130" fill="url(#heroPattern)"/>
+
+  <!-- Hero text left -->
+  <text x="70" y="135" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="white">Kariyerine Yön Ver</text>
+  <text x="70" y="155" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">Binlerce kurs ve iş fırsatını keşfet,</text>
+  <text x="70" y="170" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">hedeflerine ulaşmak için hemen başla.</text>
+  <!-- CTA buttons -->
+  <rect x="70" y="184" width="100" height="26" rx="4" fill="url(#orangeBtn)"/>
+  <text x="120" y="201" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="white">Kursları Keşfet →</text>
+  <rect x="182" y="184" width="90" height="26" rx="4" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <text x="227" y="201" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="white">Daha Fazla</text>
+
+  <!-- Search bar on hero right -->
+  <rect x="460" y="120" width="282" height="88" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="474" y="142" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="white">Kurs Ara</text>
+  <rect x="474" y="150" width="190" height="24" rx="4" fill="white"/>
+  <text x="484" y="166" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#aaa">🔍  Kurs adı veya kategori...</text>
+  <rect x="670" y="150" width="58" height="24" rx="4" fill="url(#orangeBtn)"/>
+  <text x="699" y="166" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="600" fill="white">Ara</text>
+  <!-- Category dropdown -->
+  <rect x="474" y="182" width="254" height="18" rx="3" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="484" y="194" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.7)">Kategori: Tüm Kategoriler  ▾</text>
+
+  <!-- ── STATS BAR ── -->
+  <rect x="30" y="230" width="740" height="34" fill="#4c5a7d" clip-path="url(#win)"/>
+  <g font-family="'Segoe UI',Arial,sans-serif" text-anchor="middle">
+    <text x="160" y="252" font-size="14" font-weight="700" fill="#eea412">250+</text>
+    <text x="160" y="259" font-size="7" fill="rgba(255,255,255,0.6)"> </text>
+    <text x="230" y="248" font-size="9" fill="rgba(255,255,255,0.8)">Aktif Kurs</text>
+    <line x1="320" y1="236" x2="320" y2="262" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <text x="400" y="252" font-size="14" font-weight="700" fill="#eea412">48</text>
+    <text x="460" y="248" font-size="9" fill="rgba(255,255,255,0.8)">Kategori</text>
+    <line x1="530" y1="236" x2="530" y2="262" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <text x="610" y="252" font-size="14" font-weight="700" fill="#eea412">1.2K+</text>
+    <text x="680" y="248" font-size="9" fill="rgba(255,255,255,0.8)">Kayıtlı Kullanıcı</text>
+  </g>
+
+  <!-- ── COURSE CARDS ── -->
+  <rect x="30" y="264" width="740" height="162" fill="#f2f3f5" clip-path="url(#win)"/>
+  <text x="56" y="285" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#1f1f1f">Öne Çıkan Kurslar</text>
+  <text x="700" y="285" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#eea412">Tümü →</text>
+
+  <!-- Card 1 -->
+  <rect x="46" y="292" width="158" height="118" rx="6" fill="white" filter="url(#shadow)"/>
+  <rect x="46" y="292" width="158" height="50" rx="6" fill="url(#c1)"/>
+  <rect x="46" y="328" width="158" height="14" fill="url(#c1)"/>
+  <text x="125" y="322" text-anchor="middle" font-family="Arial" font-size="18" fill="rgba(255,255,255,0.4)">💻</text>
+  <text x="60" y="360" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" fill="#1f1f1f">Web Geliştirme</text>
+  <text x="60" y="372" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#888">Full Stack • 48 saat</text>
+  <rect x="60" y="378" width="50" height="14" rx="3" fill="#fff3c7" stroke="#eea412" stroke-width="1"/>
+  <text x="85" y="388" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="#b45309">Başlangıç</text>
+  <rect x="152" y="378" width="40" height="14" rx="3" fill="url(#orangeBtn)"/>
+  <text x="172" y="388" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="white">Katıl</text>
+
+  <!-- Card 2 -->
+  <rect x="216" y="292" width="158" height="118" rx="6" fill="white" filter="url(#shadow)"/>
+  <rect x="216" y="292" width="158" height="50" rx="6" fill="url(#c2)"/>
+  <rect x="216" y="328" width="158" height="14" fill="url(#c2)"/>
+  <text x="295" y="322" text-anchor="middle" font-family="Arial" font-size="18" fill="rgba(255,255,255,0.4)">🤖</text>
+  <text x="230" y="360" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" fill="#1f1f1f">Yapay Zeka</text>
+  <text x="230" y="372" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#888">AI/ML • 64 saat</text>
+  <rect x="230" y="378" width="50" height="14" rx="3" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="255" y="388" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="#dc2626">İleri</text>
+  <rect x="322" y="378" width="40" height="14" rx="3" fill="url(#orangeBtn)"/>
+  <text x="342" y="388" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="white">Katıl</text>
+
+  <!-- Card 3 -->
+  <rect x="386" y="292" width="158" height="118" rx="6" fill="white" filter="url(#shadow)"/>
+  <rect x="386" y="292" width="158" height="50" rx="6" fill="url(#c3)"/>
+  <rect x="386" y="328" width="158" height="14" fill="url(#c3)"/>
+  <text x="465" y="322" text-anchor="middle" font-family="Arial" font-size="18" fill="rgba(255,255,255,0.4)">📱</text>
+  <text x="400" y="360" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" fill="#1f1f1f">Mobil Uygulama</text>
+  <text x="400" y="372" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#888">Android/iOS • 52 saat</text>
+  <rect x="400" y="378" width="50" height="14" rx="3" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="425" y="388" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="#15803d">Orta</text>
+  <rect x="492" y="378" width="40" height="14" rx="3" fill="url(#orangeBtn)"/>
+  <text x="512" y="388" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="white">Katıl</text>
+
+  <!-- Card 4 -->
+  <rect x="556" y="292" width="158" height="118" rx="6" fill="white" filter="url(#shadow)"/>
+  <rect x="556" y="292" width="158" height="50" rx="6" fill="url(#c4)"/>
+  <rect x="556" y="328" width="158" height="14" fill="url(#c4)"/>
+  <text x="635" y="322" text-anchor="middle" font-family="Arial" font-size="18" fill="rgba(255,255,255,0.4)">🔒</text>
+  <text x="570" y="360" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" fill="#1f1f1f">Siber Güvenlik</text>
+  <text x="570" y="372" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#888">Security • 40 saat</text>
+  <rect x="570" y="378" width="50" height="14" rx="3" fill="#faf5ff" stroke="#9333ea" stroke-width="1"/>
+  <text x="595" y="388" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="#7e22ce">Uzman</text>
+  <rect x="662" y="378" width="40" height="14" rx="3" fill="url(#orangeBtn)"/>
+  <text x="682" y="388" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="white">Katıl</text>
+
+  <!-- Footer bar -->
+  <rect x="30" y="414" width="740" height="12" fill="#3b4a68" clip-path="url(#win)"/>
+  <text x="56" y="423" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.35)">Node.js  ·  Express.js  ·  MongoDB  ·  Mongoose  ·  EJS  ·  bcrypt  ·  express-session  ·  slugify</text>
+</svg>

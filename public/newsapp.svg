@@ -1,0 +1,248 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a0533;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c1c2e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#111118;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="topbarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#593c8f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#312060;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e1040;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="imgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="imgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="imgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#9f1239;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="phoneShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <clipPath id="phoneScreen">
+      <rect x="246" y="62" width="208" height="334" rx="4"/>
+    </clipPath>
+    <clipPath id="phoneBody">
+      <rect x="234" y="40" width="232" height="374" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="0.8" fill="rgba(255,255,255,0.04)"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#dots)"/>
+
+  <!-- Ambient glows -->
+  <circle cx="350" cy="225" r="200" fill="#593c8f" opacity="0.08"/>
+  <circle cx="580" cy="160" r="130" fill="#ffc000" opacity="0.05"/>
+
+  <!-- Left info panel -->
+  <text x="60" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="white">NewsApp</text>
+  <text x="60" y="135" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#a78bfa">Android Haber Uygulaması</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="150" x2="190" y2="150" stroke="#593c8f" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Feature list -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c4b5fd">
+    <circle cx="68" cy="173" r="3" fill="#ffc000"/>
+    <text x="80" y="177">Güncel Türkiye haberleri</text>
+    <circle cx="68" cy="197" r="3" fill="#ffc000"/>
+    <text x="80" y="201">Anahtar kelime ile arama</text>
+    <circle cx="68" cy="221" r="3" fill="#ffc000"/>
+    <text x="80" y="225">Favori makaleler (Room DB)</text>
+    <circle cx="68" cy="245" r="3" fill="#ffc000"/>
+    <text x="80" y="249">NewsAPI entegrasyonu</text>
+    <circle cx="68" cy="269" r="3" fill="#ffc000"/>
+    <text x="80" y="273">MVVM + Kotlin Coroutines</text>
+    <circle cx="68" cy="293" r="3" fill="#ffc000"/>
+    <text x="80" y="297">Retrofit + Glide</text>
+  </g>
+
+  <!-- Tech badges -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="10">
+    <rect x="60" y="318" width="50" height="20" rx="10" fill="#593c8f" opacity="0.8"/>
+    <text x="85" y="332" text-anchor="middle" fill="white">Kotlin</text>
+    <rect x="118" y="318" width="58" height="20" rx="10" fill="#1d4ed8" opacity="0.8"/>
+    <text x="147" y="332" text-anchor="middle" fill="white">Android</text>
+    <rect x="184" y="318" width="44" height="20" rx="10" fill="#065f46" opacity="0.8"/>
+    <text x="206" y="332" text-anchor="middle" fill="white">Room</text>
+    <rect x="60" y="344" width="54" height="20" rx="10" fill="#92400e" opacity="0.8"/>
+    <text x="87" y="358" text-anchor="middle" fill="white">Retrofit</text>
+    <rect x="122" y="344" width="40" height="20" rx="10" fill="#831843" opacity="0.8"/>
+    <text x="142" y="358" text-anchor="middle" fill="white">Glide</text>
+    <rect x="170" y="344" width="44" height="20" rx="10" fill="#134e4a" opacity="0.8"/>
+    <text x="192" y="358" text-anchor="middle" fill="white">MVVM</text>
+  </g>
+
+  <!-- Phone body -->
+  <rect x="234" y="40" width="232" height="374" rx="28" fill="url(#phoneGrad)" filter="url(#phoneShadow)"/>
+  <!-- Phone border -->
+  <rect x="234" y="40" width="232" height="374" rx="28" fill="none" stroke="#3b2070" stroke-width="2"/>
+
+  <!-- Side buttons -->
+  <rect x="232" y="110" width="3" height="30" rx="1.5" fill="#2d1a54"/>
+  <rect x="232" y="150" width="3" height="50" rx="1.5" fill="#2d1a54"/>
+  <rect x="465" y="130" width="3" height="40" rx="1.5" fill="#2d1a54"/>
+
+  <!-- Notch/pill -->
+  <rect x="320" y="50" width="60" height="12" rx="6" fill="#111118"/>
+
+  <!-- Screen background -->
+  <rect x="246" y="62" width="208" height="334" rx="4" fill="#f8f6ff"/>
+
+  <!-- ── STATUS BAR ── -->
+  <rect x="246" y="62" width="208" height="18" fill="#593c8f"/>
+  <text x="254" y="74" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.9)">09:41</text>
+  <!-- Signal/wifi/battery icons (simplified) -->
+  <rect x="416" y="67" width="14" height="7" rx="1" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="1"/>
+  <rect x="417" y="68" width="11" height="5" rx="0.5" fill="rgba(255,255,255,0.8)"/>
+  <rect x="431" y="68" width="2" height="3" rx="1" fill="rgba(255,255,255,0.6)"/>
+
+  <!-- ── TOP APP BAR ── -->
+  <rect x="246" y="80" width="208" height="40" fill="url(#topbarGrad)"/>
+  <!-- Hamburger icon -->
+  <line x1="260" y1="96" x2="272" y2="96" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="260" y1="100" x2="272" y2="100" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="260" y1="104" x2="272" y2="104" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="350" y="104" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="white">NewsApp</text>
+  <!-- Search icon top right -->
+  <circle cx="433" cy="100" r="5" fill="none" stroke="white" stroke-width="1.5"/>
+  <line x1="436" y1="103" x2="440" y2="107" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- ── SECTION LABEL ── -->
+  <rect x="246" y="120" width="208" height="22" fill="#f0ebff"/>
+  <text x="256" y="135" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#593c8f">🇹🇷  Türkiye Haberleri</text>
+
+  <!-- ── NEWS CARD 1 ── -->
+  <rect x="252" y="148" width="196" height="72" rx="8" fill="white" filter="url(#cardShadow)"/>
+  <!-- Article image -->
+  <rect x="258" y="154" width="52" height="60" rx="4" fill="url(#imgGrad1)"/>
+  <!-- Image icon -->
+  <circle cx="274" cy="174" r="6" fill="rgba(255,255,255,0.3)"/>
+  <path d="M265 184 L271 178 L276 183 L280 179 L304 184 Z" fill="rgba(255,255,255,0.2)"/>
+  <!-- Article text -->
+  <text x="318" y="166" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="600" fill="#1a1a2e" textLength="120" lengthAdjust="spacing">Teknoloji Haberleri</text>
+  <text x="318" y="177" font-family="'Segoe UI', Arial, sans-serif" font-size="7.5" fill="#374151">Yapay zeka alanında yeni</text>
+  <text x="318" y="187" font-family="'Segoe UI', Arial, sans-serif" font-size="7.5" fill="#374151">gelişmeler devam ediyor...</text>
+  <text x="318" y="200" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="#9ca3af">BBC News  •  2 saat önce</text>
+  <!-- Favorite icon -->
+  <path d="M436 154 L438.5 157 L441 154 C442.2 153 444 154 444 155.8 C444 157.5 441 160 438.5 162 C436 160 433 157.5 433 155.8 C433 154 434.8 153 436 154Z" fill="#e5e7eb"/>
+
+  <!-- ── NEWS CARD 2 ── -->
+  <rect x="252" y="226" width="196" height="72" rx="8" fill="white" filter="url(#cardShadow)"/>
+  <rect x="258" y="232" width="52" height="60" rx="4" fill="url(#imgGrad2)"/>
+  <circle cx="274" cy="252" r="6" fill="rgba(255,255,255,0.3)"/>
+  <path d="M265 262 L271 256 L276 261 L280 257 L304 262 Z" fill="rgba(255,255,255,0.2)"/>
+  <text x="318" y="244" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="600" fill="#1a1a2e">Ekonomi Gündem</text>
+  <text x="318" y="255" font-family="'Segoe UI', Arial, sans-serif" font-size="7.5" fill="#374151">Piyasalarda son durum</text>
+  <text x="318" y="265" font-family="'Segoe UI', Arial, sans-serif" font-size="7.5" fill="#374151">ve beklentiler neler?</text>
+  <text x="318" y="278" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="#9ca3af">Reuters  •  5 saat önce</text>
+  <path d="M436 232 L438.5 235 L441 232 C442.2 231 444 232 444 233.8 C444 235.5 441 238 438.5 240 C436 238 433 235.5 433 233.8 C433 232 434.8 231 436 232Z" fill="#ffc000"/>
+
+  <!-- ── NEWS CARD 3 (partial) ── -->
+  <rect x="252" y="304" width="196" height="50" rx="8" fill="white" filter="url(#cardShadow)"/>
+  <rect x="258" y="310" width="52" height="38" rx="4" fill="url(#imgGrad3)"/>
+  <text x="318" y="322" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="600" fill="#1a1a2e">Spor Haberleri</text>
+  <text x="318" y="333" font-family="'Segoe UI', Arial, sans-serif" font-size="7.5" fill="#374151">Şampiyonluk yarışında...</text>
+  <text x="318" y="344" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="#9ca3af">ESPN  •  1 gün önce</text>
+
+  <!-- Fade out mask at bottom of scroll -->
+  <rect x="246" y="346" width="208" height="30" fill="url(#fadeGrad)"/>
+  <defs>
+    <linearGradient id="fadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f6ff;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#f8f6ff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── BOTTOM NAVIGATION ── -->
+  <rect x="246" y="362" width="208" height="34" fill="white"/>
+  <line x1="246" y1="362" x2="454" y2="362" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Active tab indicator (Headlines) -->
+  <rect x="255" y="362" width="60" height="2" rx="1" fill="#ffc000"/>
+
+  <!-- Headlines tab (active) -->
+  <rect x="255" y="366" width="14" height="10" rx="1" fill="#593c8f"/>
+  <line x1="257" y1="369" x2="267" y2="369" stroke="white" stroke-width="1"/>
+  <line x1="257" y1="372" x2="267" y2="372" stroke="white" stroke-width="1"/>
+  <text x="285" y="383" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="7" font-weight="600" fill="#593c8f">Haberler</text>
+
+  <!-- Favorites tab -->
+  <path d="M336 368 L338.5 371 L341 368 C342 367 343.5 368 343.5 369.5 C343.5 371 341 373 338.5 375 C336 373 333.5 371 333.5 369.5 C333.5 368 335 367 336 368Z" fill="#9ca3af"/>
+  <text x="350" y="383" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="#9ca3af">Favoriler</text>
+
+  <!-- Search tab -->
+  <circle cx="410" cy="371" r="5" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="413" y1="374" x2="416" y2="377" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="415" y="383" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="#9ca3af">Ara</text>
+
+  <!-- Home indicator -->
+  <rect x="320" y="400" width="60" height="3" rx="1.5" fill="#3b2070"/>
+
+  <!-- Right side: architecture diagram -->
+  <text x="540" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="white">Mimari</text>
+  <line x1="540" y1="108" x2="630" y2="108" stroke="#593c8f" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- MVVM blocks -->
+  <rect x="540" y="120" width="100" height="32" rx="6" fill="#312060" stroke="#593c8f" stroke-width="1"/>
+  <text x="590" y="140" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#e9d5ff">View (Fragment)</text>
+
+  <line x1="590" y1="152" x2="590" y2="168" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <rect x="540" y="168" width="100" height="32" rx="6" fill="#312060" stroke="#7c3aed" stroke-width="1"/>
+  <text x="590" y="188" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#e9d5ff">ViewModel</text>
+
+  <line x1="590" y1="200" x2="590" y2="216" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <rect x="540" y="216" width="100" height="32" rx="6" fill="#312060" stroke="#a855f7" stroke-width="1"/>
+  <text x="590" y="236" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#e9d5ff">Repository</text>
+
+  <!-- Fork -->
+  <line x1="590" y1="248" x2="590" y2="258" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="555" y1="258" x2="625" y2="258" stroke="#a855f7" stroke-width="1.5"/>
+
+  <line x1="555" y1="258" x2="555" y2="270" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="520" y="270" width="70" height="28" rx="5" fill="#1e1040" stroke="#0891b2" stroke-width="1"/>
+  <text x="555" y="283" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8.5" font-weight="600" fill="#7dd3fc">NewsAPI</text>
+  <text x="555" y="293" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="7.5" fill="#60a5fa">Retrofit</text>
+
+  <line x1="625" y1="258" x2="625" y2="270" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="591" y="270" width="68" height="28" rx="5" fill="#1e1040" stroke="#16a34a" stroke-width="1"/>
+  <text x="625" y="283" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8.5" font-weight="600" fill="#86efac">Room DB</text>
+  <text x="625" y="293" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="7.5" fill="#4ade80">SQLite</text>
+
+  <!-- Coroutines badge -->
+  <rect x="535" y="320" width="120" height="26" rx="6" fill="#1e1040" stroke="#ffc000" stroke-width="1"/>
+  <text x="595" y="337" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#ffc000">⚡ Kotlin Coroutines</text>
+
+  <!-- LiveData badge -->
+  <rect x="535" y="354" width="120" height="26" rx="6" fill="#1e1040" stroke="#7c3aed" stroke-width="1"/>
+  <text x="595" y="371" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c4b5fd">LiveData + ViewBinding</text>
+
+  <!-- Glide badge -->
+  <rect x="535" y="388" width="56" height="22" rx="5" fill="#312060" stroke="#a855f7" stroke-width="1"/>
+  <text x="563" y="403" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#e9d5ff">Glide</text>
+
+  <rect x="598" y="388" width="56" height="22" rx="5" fill="#312060" stroke="#a855f7" stroke-width="1"/>
+  <text x="626" y="403" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#e9d5ff">OkHttp</text>
+
+</svg>
