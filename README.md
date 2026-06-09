@@ -2,7 +2,7 @@
 
 Personal portfolio website built with Next.js 16 and Tailwind CSS v4.
 
-**Live:** [mehmetkucuk.vercel.app](https://mehmetkucuk.vercel.app)
+**Live:** [portfolio-orpin-kappa-33.vercel.app](https://portfolio-orpin-kappa-33.vercel.app)
 
 ## Tech Stack
 
